@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #b8b8b8;
+}
+header img {
+  /* background-image: url(assets/я.JPG); */
+  height: 500px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  border: 5px solid #3b3b3b;
+  border-left: none;
+  border-top: none;
+  border-right: solid 3px #3b3b3b;
+}
+header span{
+  width: 50%;
+  float: left;
+}
+header h1, header h2 {
+  text-align: center;
+}
+
+.anim-show {
+  opacity:0; 
+  transition: 2s; /*Скорость перехода состояния элемента*/
+  animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  /* animation-delay: 1s; Задержка перед началом */
+}
+
+@keyframes show{
+  0%{
+  opacity:0;
+  }
+  100% {
+  opacity:1;
+  }
+  }
